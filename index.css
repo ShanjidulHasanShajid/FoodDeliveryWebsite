@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Jost", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: white;
+}
+
+.appTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f40469;
+}
+
+.signIn {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cover {
+    background-image: url(Preset.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.cover img {
+    width: 24px;
+}
+
+.punchLine {
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.inputField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    height: 56px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.location,
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-basis: 0;
+    font-weight: 600;
+    font-size: 20px;
+    height: 100%;
+}
+
+.input {
+    width: 60%;
+    height: 100%;
+}
+
+.button {
+    border-radius: 0px 30px 30px 0px;
+    background-color: #ff006e;
+    color: white;
+}
+
+.location {
+    border-right: 1px solid #c5cbd1;
+    top: 50%; /* Start from the middle */
+    right: 0;
+    width: 0; /* Border only, no width */
+    height: 70%; /* Cover 90% of the height */
+    border-radius: 30px 0px 0px 30px;
+    opacity: 85%;
+}
+
+.intro img {
+    width: 605px;
+    height: 591px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+
+.introText {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: column;
+    font-weight: 400;
+    opacity: 80%;
+    width: 400px;
+}
+
+.introHeading {
+    font-size: 48px;
+}
+.description {
+    font-size: 18px;
+}
+
+.downloadButton {
+    background-color: #ff006e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.moreItems {
+    padding: 0px 200px;
+}
+
+.popularText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.viewAllButton {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+.plt {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+@media (min-width: 400px) and (max-width: 920px) {
+    .header {
+        padding: 15px 15px;
+    }
+    .appTitle {
+        font-size: 25px;
+    }
+
+    .cover {
+        background-image: url(PresetCropped.png);
+        height: 490px;
+        gap: 30px;
+    }
+
+    .punchLine {
+        font-size: 40px;
+        text-align: center;
+    }
+    .inputField {
+        width: 90vw;
+        height: 45px;
+    }
+    .location,
+    .button {
+        font-size: 15px;
+    }
+    .input {
+        width: 40%;
+    }
+
+    .intro img {
+        width: 305px;
+        height: 280px;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 70px;
+        gap: 30px;
+    }
+
+    .introText {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-direction: column;
+        font-weight: 400;
+        opacity: 80%;
+        width: 400px;
+        text-align: center;
+    }
+
+    .introHeading {
+        font-size: 30px;
+    }
+    .description {
+        font-size: 16px;
+    }
+
+    .downloadButton {
+        background-color: #ff006e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: 600;
+    }
+}
